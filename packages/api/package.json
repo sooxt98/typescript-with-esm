@@ -7,7 +7,7 @@
     "start:tsx-watch": "tsx watch --es-module-specifier-resolution=node -r tsconfig-paths/register ./src/main.ts",
     "start:tsx": "tsx --es-module-specifier-resolution=node -r tsconfig-paths/register ./src/main.ts",
     "build:tsc": "tsc --build",
-    "start:prod": "node -r tsconfig-paths/register ./dist/src/main.js",
+    "start:prod": "node --experimental-specifier-resolution=node -r tsconfig-paths/register ./dist/src/main.js",
     "prestart:prod": "rm -rf dist && tsc",
     "start": "pnpm run build:tsc && pnpm run start:prod",
     "test": "echo \"Error: no test specified\" && exit 1",
