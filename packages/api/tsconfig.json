@@ -111,9 +111,9 @@
       "dom",
       "ESNext",
     ],
-//    "paths": {
-//      "src/*": ["./src/*"]
-//    }
+    "paths": {
+      "src/*": ["./src/*"]
+    }
   },
 //  "include": [
 //      "./src/**/*",
