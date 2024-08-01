@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                          
-    "module": "ESNext",                          
-    "moduleResolution": "node",                  
-    "outDir": "./dist",                          
-    "rootDir": "./src",                          
-    "strict": true,                             
-    "esModuleInterop": true,                     
-    "skipLibCheck": true,                        
-    "forceConsistentCasingInFileNames": true,   
-    "baseUrl": "./src",                         
-    "paths": {                                   
-      "src/*": ["*"]
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"]
     },
-    "allowSyntheticDefaultImports": true,       
-    "resolveJsonModule": true                   
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],                           
-  "exclude": ["node_modules", "dist"]           
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
